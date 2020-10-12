@@ -578,6 +578,9 @@
 						// Unmark element as moved.
 							$e.removeData(key);
 
+
+							
+
 					}
 
 			});
