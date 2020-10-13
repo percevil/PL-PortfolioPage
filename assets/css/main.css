@@ -200,6 +200,62 @@ body.is-preload *:after {
 
 
 /* ***********************  ADD-INS   ******************** */
+:root{
+--bubbleColor:#F25AD9;
+
+}
+
+.circleContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+}
+.circle1{
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+}
+
+.circle2{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+}
+.circle3{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+}
+.circle4{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+}
+.circle5{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+}
+/* .circle6{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color:var(--bubbleColor);
+  position: relative;
+} */
 
 .main-list-container {
   display: flex;
@@ -232,6 +288,21 @@ opacity: 0.4;
   width: 68px;
   margin-top: -25px;
   margin-right: 20px ;
+}
+
+.wdContainer{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.uiContainer{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 
