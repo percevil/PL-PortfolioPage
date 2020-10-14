@@ -55,7 +55,7 @@ tl.from('.circle2', {
 tl.from('.circle1', {
   // duration: --duration,
   opacity: 1,
-  y: -550,
+  y: -500,
   yoyo:true,
   repeat:1,
 });

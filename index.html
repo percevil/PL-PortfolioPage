@@ -8,6 +8,23 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- FONTS -->
+    <!-- SERIF -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- paragraph -->
+    <!-- SANS-SERIF -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -45,10 +62,10 @@
         </div>
 
         <div class="inner">
-          <h1>Percival Lau's Portfolio</h1>
+          <h1 class="plTitle">Percival Lau</h1>
           <p>
             Welcome,<br />
-            My Name is Percy and I am a Web Developer and UI Designer.
+            My Name is Percy and I am a Front End Web Developer and UI Designer.
             <br />Thank you for taking the time to view my website. <br />
             I hope you enjoy your stay.
           </p>
@@ -76,7 +93,7 @@
       <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
         <div class="wdContainer">
-          <h1>Web Dev Projects</h1>
+          <h1 class="wdTitle">Web Dev Projects</h1>
         </div>
 
         <section>
@@ -130,12 +147,10 @@
           </div>
         </section>
       </section>
-
+      <!-- UI PROJECT SECTION -->
       <div class="uiContainer">
-        <h1>UI Projects</h1>
+        <h1 class="uiTitle">UI Projects</h1>
       </div>
-
-      <!-- UI PROOJECT SECTION -->
       <section id="one" class="wrapper style2 spotlights">
         <section>
           <a href="#" class="image"
@@ -256,9 +271,14 @@
             lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
             imperdiet est velit quis lorem.
           </p>
+
           <div class="split style1">
             <section>
-              <form method="post" action="#">
+              <form
+                id="form"
+                action="https://formspree.io/f/xpzoprzn"
+                method="POST"
+              >
                 <div class="fields">
                   <div class="field half">
                     <label for="name">Name</label>
@@ -274,28 +294,32 @@
                   </div>
                 </div>
                 <ul class="actions">
-                  <li><a href="" class="button submit">Send Message</a></li>
+                  <li>
+                    <button class="button submit" type="submit">
+                      Send message
+                    </button>
+                  </li>
                 </ul>
               </form>
+
+              <!-- captcha -->
+              <form class="captcha" action="?" method="POST">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LdTHdcZAAAAANz3xSIDwJzC2Zy13yy9zH3Z3js-"
+                ></div>
+              </form>
+
+              <div id="status"></div>
             </section>
+
             <section>
               <ul class="contact">
-                <!-- <li>
-                  <h3>Address</h3>
-                  <span
-                    >12345 Somewhere Road #654<br />
-                    Nashville, TN 00000-0000<br />
-                    USA</span
-                  >
-                </li> -->
                 <li>
                   <h3>Email</h3>
-                  <a href="percylauwebdev.ca">percylauwebdev.ca</a>
+                  <a href="#">percy@percylauwebdev.ca</a>
                 </li>
-                <li>
-                  <h3>Phone</h3>
-                  <span>(604) 802-0666</span>
-                </li>
+
                 <li>
                   <h3>Social</h3>
                   <ul class="icons">
@@ -333,7 +357,7 @@
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/percival-lau-b8a804115"
+                        href="https://www.linkedin.com/in/percival-percy-lau-b8a804115/"
                         class="icon brands fa-linkedin-in"
                         target="_blank"
                         ><span class="label">LinkedIn</span></a
@@ -353,7 +377,7 @@
       <div class="inner">
         <ul class="menu">
           <li>&copy; Percival Lau 2020. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">Percival Lau Designs</a></li>
+          <li>Design: <a href="#">Percival Lau Designs</a></li>
         </ul>
       </div>
     </footer>
