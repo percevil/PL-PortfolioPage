@@ -44,14 +44,7 @@ tl.from('.circle3', {
   yoyo:true,
   repeat:1,
 });
-tl.from('.circle2', {
-  duration: 0.5,
-  opacity: 0,
-  y: -1100,
-  stagger: 0.25,
-  yoyo:true,
-  repeat:1,
-});
+
 tl.from('.circle1', {
   // duration: --duration,
   opacity: 1,
@@ -59,9 +52,16 @@ tl.from('.circle1', {
   yoyo:true,
   repeat:1,
 });
+tl.from('.circle2', {
+  duration: 0.5,
+  opacity: 1,
+  y: -900,
+d  // yoyo:true,
+  // repeat:2,
+});
 
 tl.from('.circle', {
-  '--bubbleColor': '#AD5AF2',
+  '--bubbleColor': 'purple',
   duration: 4,
   yoyo: true,
   repeat: -1,
@@ -70,7 +70,7 @@ tl.from('.circle', {
 
 tl.to('.circle', {
   duration: 10,
-  rotationY: '180',
+  rotationY: '36',
   repeat: -1,
 });
 
