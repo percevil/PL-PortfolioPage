@@ -1,12 +1,12 @@
-$.ajax({
-    url: "https://formspree.io/f/xpzoprzn",
-    method: "POST",
-    dataType: "json",
-    data: {
-      email: "a.visitor@email.com",
-      message: "Hello!"
-    }
-  });
+// $.ajax({
+//     url: "https://formspree.io/f/xpzoprzn",
+//     method: "POST",
+//     dataType: "json",
+//     data: {
+//       email: "a.visitor@email.com",
+//       message: "Hello!"
+//     }
+//   });
 
 window.addEventListener("DOMContentLoaded", function() {
 
@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
     function success() {
       form.reset();
       status.classList.add("success");
-      status.innerHTML = "Thank You! Your message has been sent";
+      status.innerHTML = "Thank You! Your message has been sent.";
     }
 
     function error() {

@@ -1,6 +1,6 @@
 			
 
-const tl = gsap.timeline({ });
+const tl = gsap.timeline({});
 
 
 tl.from('.chevron', {
@@ -11,14 +11,6 @@ tl.from('.chevron', {
   stagger: .4,
   repeat: -1,
 });
-
-tl.to('.submit', {
-    duration: 2,
-    opacity: 0.3,
-    ease: 'linear', 
-    repeat: -1,
-});
-
 
 tl.from('.circle5', {
   // duration: --duration,
@@ -52,13 +44,28 @@ tl.from('.circle1', {
   yoyo:true,
   repeat:1,
 });
+
 tl.from('.circle2', {
   duration: 0.5,
   opacity: 1,
-  y: -900,
-d  // yoyo:true,
-  // repeat:2,
+  x: -900,
+ yoyo:true,
+  repeat:2,
 });
+
+tl.to('.circle', {
+  duration: 10,
+  rotationY: '360',
+  yoyo: true,
+  repeat: 2,
+});
+
+tl.to('#contactMe', {
+  duration: 2.5,
+  opacity: 0.3,
+  ease: 'none', 
+  repeat: -1,
+  });
 
 tl.from('.circle', {
   '--bubbleColor': 'purple',
@@ -67,10 +74,19 @@ tl.from('.circle', {
   repeat: -1,
 });
 
-
-tl.to('.circle', {
-  duration: 10,
-  rotationY: '36',
+tl.to('.submit', {
+  duration: 2.5,
+  opacity: 0.3,
+  ease: 'none', 
   repeat: -1,
+  
 });
+
+
+
+
+
+
+
+
 
